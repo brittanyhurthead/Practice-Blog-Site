@@ -1,5 +1,9 @@
+:root {
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,16 +16,24 @@ header {
   margin-bottom: 20px;
 }
 
+nav {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
 nav ul {
   list-style: none;
-  background-color: #eee;
   padding: 0;
   text-align: center;
 }
 
 nav li {
+  font-family: var(--body-font);
   display: inline;
   margin: 0 10px;
+}
+nav li:hover {
+  text-decoration: underline;
 }
 
 nav a {
@@ -40,16 +52,18 @@ article {
 }
 
 footer {
-  background-color: #333;
+  font-family: var(--body-font);
+  background-color: #63564d;
   color: #fff;
   text-align: center;
   padding: 1rem;
 }
 .post-tile {
+  text-align: center;
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
-  transition: transform 0.3s;
+  transition: transform 0.8s;
 }
 
 .post-tile:hover {
@@ -57,12 +71,18 @@ footer {
 }
 
 .post-tile h2 {
+  font-family: var(--heading-font);
   margin-top: 0;
 }
 
+.post-tile p {
+  font-family: var(--body-font);
+}
+
 .post-tile a {
+  font-family: var(--body-font);
   display: inline-block;
-  background-color: #333;
+  background-color: #63564d;
   color: #fff;
   padding: 5px 10px;
   text-decoration: none;
@@ -86,8 +106,13 @@ footer {
 }
 
 .signup-form h3 {
+  font-family: var(--heading-font);
   text-align: center;
   margin-top: 0;
+}
+
+.signup-form p {
+  font-family: var(--body-font);
 }
 
 .signup-form form {
@@ -96,6 +121,7 @@ footer {
 }
 
 .signup-form input[type="email"] {
+  font-family: var(--body-font);
   width: 60%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -103,6 +129,7 @@ footer {
 }
 
 .signup-form button[type="submit"] {
+  font-family: var(--body-font);
   background-color: #333;
   color: #fff;
   border: none;
