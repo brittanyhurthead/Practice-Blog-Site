@@ -267,3 +267,14 @@ p {
 }
 
 /* ... (remaining styles) ... */
+/* ... (previous styles) ... */
+
+.bottom-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+/* ... (remaining styles) ... */
