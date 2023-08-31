@@ -227,6 +227,7 @@ p {
 /* ... (previous styles) ... */
 
 .contact-form {
+  font-family: var(--body-font);
   margin: 20px;
   text-align: center;
 }
