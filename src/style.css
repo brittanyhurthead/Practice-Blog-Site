@@ -149,7 +149,78 @@ header {
   padding: 8rem 0; /* Adjust padding as needed */
 }
 
+.blog-header {
+  position: relative;
+  text-align: center;
+  background-image: url("farmersmarket.jpg");
+  background-size: cover; /* Cover the entire header with the image */
+  background-position: center; /* Center the image within the header */
+  background-color: rgba(51, 51, 51, 0.5); /* Add a semi-transparent overlay */
+  color: #fff;
+  padding: 8rem 0; /* Adjust padding as needed */
+}
+
 header h1 {
   margin: 0;
   padding: 0;
 }
+
+.brittany-picture {
+  display: block;
+  margin: 0 auto;
+  max-width: 85%;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+h2 {
+  font-family: var(--heading-font);
+}
+p {
+  font-family: var(--body-font);
+}
+
+.about-me-description {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.intro {
+  font-size: 40px;
+}
+.about-body {
+  font-size: 25px;
+}
+.outro {
+  font-size: 25px;
+}
+
+/* blog post page styling */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 posts per row */
+  gap: 20px;
+  margin: 20px;
+}
+
+.post-tile {
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.post-tile img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.filter {
+  /* Style your filter options here */
+}
+
+/* ... (remaining styles) ... */
